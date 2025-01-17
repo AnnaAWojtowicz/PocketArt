@@ -1,0 +1,23 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-nav {
+  display: inline !important;
+  font-family: Cormorant Unicase, serif;
+  font-size: 2rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+#search-form-nav {
+  display: inline !important;
+}
+
+.search-input {
+  border-radius: 25px;
+  font-size: 1.5rem;
+}
