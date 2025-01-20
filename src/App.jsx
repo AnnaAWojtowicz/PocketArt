@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Nav from './assets/components/Nav'
-import Footer from './assets/components/Footer'
+import Nav from './assets/components/Nav1.jsx'
+import Footer from './assets/components/Footer.jsx'
 
 
 
@@ -12,6 +9,10 @@ function Home() {
   return (
     <>
       <Nav />
+      <span className="discover">discover </span>
+      <span id="art">Art</span>
+      <span className="discover">  every day</span>
+      <Footer />
     </>
   )
 }
@@ -25,10 +26,7 @@ function App() {
     <>
 
       <Home />
-      <span class="discover">discover </span>
-      <span id="art">Art</span>
-      <span class="discover">  every day</span>
-      <Footer />
+
     </>
   )
 }
