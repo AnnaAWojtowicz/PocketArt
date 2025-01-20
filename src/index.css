@@ -1,3 +1,28 @@
 body {
   background-color: #1e1e1e;
 }
+
+.discover {
+  font-family: Poltlawski, serif;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 9rem;
+}
+
+#art {
+  font-family: Cormorant Unicase, serif;
+  color: #ffffff;
+  font-size: 10rem;
+}
+
+.footer-text {
+  font-family: Poltlawski, serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.footer-year {
+  font-family: Poltlawski, serif;
+  color: #ffffff;
+  font-size: 1, 5rem;
+}

@@ -13,7 +13,7 @@ function Nav() {
             <Form id='search-form-nav'>
                 <Row>
                     <Col xs="auto">
-                        <Form.Control
+                        {/* <Form.Control
                             type="text"
                             placeholder="Search"
                             className="mr-sm-2 search-input"
@@ -23,7 +23,18 @@ function Nav() {
                             <span className="material-symbols-outlined">
                                 search
                             </span>
-                        </InputGroup.Text>
+                        </InputGroup.Text> */}
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                                placeholder="Search"
+                                aria-label="Search"
+                                aria-describedby="basic-addon2"
+                            />
+                            <InputGroup.Text id="basic-addon2" class="material-symbols-outlined">
+                                search
+                            </InputGroup.Text>
+                        </InputGroup>
+
                         {/* <Button type="submit">Submit</Button> */}
                     </Col>
                 </Row>
