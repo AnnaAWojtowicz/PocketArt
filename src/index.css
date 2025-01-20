@@ -21,6 +21,12 @@ body {
   font-size: 1.5rem;
 }
 
+.footer-name {
+  font-family: Cormorant Unicase, serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
 .footer-year {
   font-family: Poltlawski, serif;
   color: #ffffff;
