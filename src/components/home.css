@@ -1,0 +1,54 @@
+.discover {
+  font-family: Poltlawski, serif;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 9rem;
+}
+
+#art {
+  font-family: Cormorant Unicase, serif;
+  color: #ffffff;
+  font-size: 10rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.about-us-img {
+  width: 6rem;
+  height: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.footer-text {
+  font-family: Poltlawski, serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.footer-name {
+  font-family: Cormorant Unicase, serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.footer-year {
+  font-family: Poltlawski, serif;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
