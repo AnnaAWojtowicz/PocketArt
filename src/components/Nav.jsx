@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Nav.css';
 
-function Nav1() {
+function Nav() {
     return (
         <Navbar className="nav-container">
             <span id="logo-nav">PocketArt</span>
