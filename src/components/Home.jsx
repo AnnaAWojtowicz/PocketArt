@@ -5,13 +5,20 @@ import Footer from './Footer.jsx'
 
 function Home() {
     return (
-        <>
+        <div className="home">
+
             <Nav />
-            <span className="discover">discover </span>
-            <span id="art">Art</span>
-            <span className="discover">  every day</span>
+            <div className="home-text-container">
+                <div className="home-text-1">
+                    <span className="discover">discover </span>
+                    <span id="art">Art</span>
+                </div>
+                <div className="home-text-2">
+                    <span className="discover">  every day</span>
+                </div>
+            </div>
             <Footer />
-        </>
+        </div>
     )
 }
 

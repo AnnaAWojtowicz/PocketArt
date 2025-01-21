@@ -5,7 +5,6 @@ function Footer() {
         return new Date().getFullYear();
     };
 
-
     return (
         <>
             <div className="footer">

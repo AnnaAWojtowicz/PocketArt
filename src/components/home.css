@@ -1,3 +1,42 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/Weyden1.jpeg");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    black 50%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  z-index: 1;
+}
+
+.home-text-container,
+nav,
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
+.home-text-1,
+.home-text-2 {
+  text-align: end;
+}
+
 .discover {
   font-family: Poltlawski, serif;
   font-style: italic;
@@ -11,11 +50,11 @@
   font-size: 10rem;
 }
 
-.footer {
+/* .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .footer-container {
   display: flex;
