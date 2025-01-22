@@ -6,7 +6,7 @@ import Footer from './Footer.jsx'
 function Home() {
     return (
         <div className="home">
-
+            <div className="home-img-opacity"> </div>
             <Nav />
             <div className="home-text-container">
                 <div className="home-text-1">
@@ -19,6 +19,7 @@ function Home() {
             </div>
             <Footer />
         </div>
+
     )
 }
 

@@ -3,6 +3,10 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background-image: url("../assets/img/Weyden1.jpeg");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
 }
 
 .home::before {
@@ -12,24 +16,30 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.home-img-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../assets/img/Weyden1.jpeg");
   background-size: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
-  -webkit-mask-image: radial-gradient(
-    circle,
-    black 50%,
-    rgba(0, 0, 0, 0.5) 50%
-  );
-  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
-  z-index: 1;
+  clip-path: inset(15% 23% 15% 7%);
+  border-radius: 20px;
+  z-index: 2;
 }
 
 .home-text-container,
 nav,
 .footer {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .home-text-1,
