@@ -1,5 +1,6 @@
 import "./Home.css"
 import Nav from './Nav.jsx'
+import BigButton from "./BigButton.jsx"
 import Footer from './Footer.jsx'
 
 
@@ -17,6 +18,7 @@ function Home() {
                     <span className="discover">  every day</span>
                 </div>
             </div>
+            <BigButton />
             <Footer />
         </div>
 

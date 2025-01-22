@@ -71,7 +71,8 @@
 
 .home-text-container,
 nav,
-.footer {
+.footer,
+.big-button {
   position: relative;
   z-index: 3;
 }

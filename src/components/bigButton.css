@@ -1,0 +1,17 @@
+.big-button {
+  background-color: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0.5em;
+  width: 20rem;
+  height: 20rem;
+  left: 70%;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  z-index: 4;
+}
