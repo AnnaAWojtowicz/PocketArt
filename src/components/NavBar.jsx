@@ -16,7 +16,7 @@ function NavBar() {
             <Form className="d-flex align-items-baseline">
                 <Form.Control
                     type="text"
-                    placeholder="Search"
+                    placeholder=""
                     className="mr-sm-2 search-field"
                 />
                 <Button type="submit" id="basic-addon2"><span class="material-symbols-outlined search-button">

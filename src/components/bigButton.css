@@ -1,17 +1,68 @@
+.big-buttons-container {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+}
+
 .big-button {
   background-color: #f7f7f7;
   border: 1px solid #e7e7e7;
   border-radius: 50%;
   color: #333;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-size: 1.2em;
   margin: 0.5em;
   width: 20rem;
   height: 20rem;
-  left: 70%;
+  left: 68%;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s;
   z-index: 4;
+}
+
+#big-button-1,
+#big-button-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 2rem;
+  color: #f7f7f7;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+}
+
+#big-button-1::before,
+#big-button-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+#big-button-1::before {
+  background-image: url("../assets/img/Munch.jpg");
+}
+
+#big-button-2::before {
+  background-image: url("../assets/img/Lorck.jpg");
+}
+
+#big-button-1 span,
+#big-button-2 span {
+  position: relative;
+  z-index: 2;
+  color: #f7f7f7;
 }

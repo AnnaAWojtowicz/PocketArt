@@ -38,7 +38,7 @@
   height: 100vh;
   max-width: 1400px;
   margin: auto;
-  overflow: hidden;
+  overflow: auto;
   background-image: url("../assets/img/Weyden1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,13 +56,17 @@ nav,
   z-index: 3;
 }
 
+.home-text-container {
+  padding-top: 6rem;
+}
+
 .home-text-1,
 .home-text-2 {
   text-align: end;
 }
 
 .discover {
-  font-family: Poltlawski, serif;
+  font-family: "Poltawski Nowy", serif;
   font-style: italic;
   color: #ffffff;
   font-size: 9rem;
@@ -96,7 +100,7 @@ nav,
 }
 
 .footer-text {
-  font-family: Poltlawski, serif;
+  font-family: "Poltawski Nowy", serif;
   color: #ffffff;
   font-size: 1.2rem;
   margin: 0.5rem;
@@ -109,7 +113,7 @@ nav,
 }
 
 .footer-year {
-  font-family: Poltlawski, serif;
+  font-family: "Poltawski Nowy", serif;
   color: #ffffff;
   font-size: 1rem;
   text-align: center;

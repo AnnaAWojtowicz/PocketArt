@@ -1,7 +1,10 @@
-import "./Home.css"
+import "./home.css"
+import "./bigButton.css"
 import NavBar from './NavBar.jsx'
 import BigButton from "./BigButton.jsx"
 import Footer from './Footer.jsx'
+
+
 
 
 function Home() {

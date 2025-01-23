@@ -3,7 +3,10 @@ import "./bigButton.css"
 function BigButton() {
     return (
         <>
-            <button className="big-button">Click me!</button>
+            <div className="big-button-container">
+                <button className="big-button" id="big-button-1"><span>Today's Art</span></button>
+                <button className="big-button" id="big-button-2"><span>Quiz</span></button>
+            </div>
         </>
     )
 }
