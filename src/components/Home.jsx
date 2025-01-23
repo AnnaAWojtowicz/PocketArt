@@ -1,5 +1,5 @@
 import "./Home.css"
-import Nav from './Nav.jsx'
+import NavBar from './NavBar.jsx'
 import BigButton from "./BigButton.jsx"
 import Footer from './Footer.jsx'
 
@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="background-home">
             <div className="home">
-                <Nav />
+                <NavBar />
                 <div className="home-text-container">
                     <div className="home-text-1">
                         <span className="discover">discover </span>
