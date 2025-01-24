@@ -48,6 +48,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poltawski Nowy", serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .background-home {
@@ -65,6 +67,10 @@ body {
 
 .home {
   padding: 1rem 4.5rem 2rem 4.5rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .home-text-container,
