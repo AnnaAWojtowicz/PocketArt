@@ -39,3 +39,43 @@
 input {
   font-family: Cormorant Unicase, serif;
 }
+
+/* LARGE SCREEN */
+@media (max-width: 992px) {
+  #logo-nav {
+    font-size: 1.75rem;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .search-field {
+    font-size: 1.3rem;
+    padding: 0.62rem 0.2rem 0.15rem 0.2rem;
+  }
+
+  #basic-addon2 {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem 0.15rem 0.5rem;
+  }
+}
+
+/* MEDIUM SCREEN */
+@media (max-width: 768px) {
+  #logo-nav {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .search-field {
+    font-size: 1.1rem;
+    padding: 0.62rem 0.2rem 0.15rem 0.2rem;
+  }
+
+  #basic-addon2 {
+    font-size: 1.3rem;
+    padding: 0.15rem 0.5rem 0.1rem 0.5rem;
+  }
+}
+
+/* SMALL SCREEN */
+@media (max-width: 576px) {
+}

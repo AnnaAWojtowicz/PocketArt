@@ -16,7 +16,7 @@ body {
   position: relative;
   min-height: 140vh;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1100px;
   margin: auto;
   background-image: url("../assets/img/Weyden1.jpg");
   background-size: contain;
@@ -26,11 +26,10 @@ body {
 }
 
 .home {
-  padding: 1rem 4.5rem 2rem 4.5rem;
+  max-width: 950px;
+  padding: 1rem 3rem 2rem 3rem;
   width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* LARGE SCREEN */
@@ -38,12 +37,26 @@ body {
   .background-home {
     min-height: 110vh;
   }
+
+  .home {
+    max-width: 800px;
+    padding: 1rem 3rem 2rem 3rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* MEDIUM SCREEN */
 @media (max-width: 768px) {
   .background-home {
     min-height: 85vh;
+  }
+
+  .home {
+    max-width: 620px;
+    padding: 1rem 2rem 2rem 2rem;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
