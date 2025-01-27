@@ -25,9 +25,15 @@ body {
   background-attachment: scroll;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .background-home {
-    min-height: 250vh;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-home {
+    min-height: 75vh;
   }
 }
 
