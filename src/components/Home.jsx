@@ -11,7 +11,7 @@ function Home() {
     return (
         <div className="background-home">
             <div className="home">
-                <NavBar />
+                {/* <NavBar /> */}
                 {/* <div className="home-text-container">
                     <div className="home-text-1">
                         <span className="discover">discover </span>

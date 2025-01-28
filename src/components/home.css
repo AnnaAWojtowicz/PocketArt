@@ -8,63 +8,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poltawski Nowy", serif;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
 .background-home {
   position: relative;
-  min-height: 140vh;
+  min-height: 180vh;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1600px;
   margin: auto;
   background-image: url("../assets/img/Weyden1.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-attachment: scroll;
 }
 
 .home {
-  max-width: 950px;
+  max-width: 1600px;
   padding: 1rem 3rem 2rem 3rem;
   width: 100%;
   margin: 0 auto;
-}
-
-/* LARGE SCREEN */
-@media (max-width: 992px) {
-  .background-home {
-    min-height: 110vh;
-  }
-
-  .home {
-    max-width: 800px;
-    padding: 1rem 3rem 2rem 3rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-/* MEDIUM SCREEN */
-@media (max-width: 768px) {
-  .background-home {
-    min-height: 85vh;
-  }
-
-  .home {
-    max-width: 620px;
-    padding: 1rem 2rem 2rem 2rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-/* SMALL SCREEN */
-@media (max-width: 576px) {
-  .background-home {
-    min-height: 75vh;
-  }
 }
 
 .home-text-container,
@@ -76,7 +40,7 @@ nav,
 }
 
 .home-text-container {
-  padding-top: 6rem;
+  padding-top: 2rem;
 }
 
 .home-text-1,
@@ -88,14 +52,61 @@ nav,
   font-family: "Poltawski Nowy", serif;
   font-style: italic;
   color: #ffffff;
-  font-size: 9rem;
+  font-size: 7rem;
   line-height: 0.7;
 }
 
 #art {
   font-family: Cormorant Unicase, serif;
   color: #ffffff;
-  font-size: 10rem;
+  font-size: 7rem;
+}
+
+/* EXTRA LARGE SCREEN */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .background-home {
+    min-height: 170vh;
+  }
+}
+
+/* LARGE SCREEN */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .background-home {
+    min-height: 145vh;
+  }
+}
+
+/* MEDIUM SCREEN */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .background-home {
+    min-height: 110vh;
+  }
+
+  .home {
+    padding: 1rem 3rem 2rem 3rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* SMALL SCREEN */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .background-home {
+    min-height: 100vh;
+  }
+
+  .home {
+    padding: 1rem 2rem 2rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* EXTRA SMALL SCREEN */
+@media (max-width: 575.98px) {
+  .background-home {
+    min-height: 75vh;
+  }
 }
 
 /* .footer {
