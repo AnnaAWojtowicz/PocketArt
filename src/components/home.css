@@ -67,6 +67,13 @@ nav,
   .background-home {
     min-height: 170vh;
   }
+
+  .home {
+    max-width: 1400px;
+    padding: 1rem 3rem 2rem 3rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* LARGE SCREEN */
@@ -105,7 +112,14 @@ nav,
 /* EXTRA SMALL SCREEN */
 @media (max-width: 575.98px) {
   .background-home {
-    min-height: 75vh;
+    min-height: 100vh;
+  }
+
+  .home {
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    max-width: 575px;
+    margin: 0 auto;
   }
 }
 

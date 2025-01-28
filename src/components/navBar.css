@@ -40,8 +40,16 @@ input {
   font-family: Cormorant Unicase, serif;
 }
 
+/* EXTRA LARGE SCREEN */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
 /* LARGE SCREEN */
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* MEDIUM SCREEN */
+@media (min-width: 768px) and (max-width: 991.98px) {
   #logo-nav {
     font-size: 1.75rem;
     padding: 0.5rem 0.3rem;
@@ -58,8 +66,8 @@ input {
   }
 }
 
-/* MEDIUM SCREEN */
-@media (max-width: 768px) {
+/* SMALL SCREEN */
+@media (min-width: 576px) and (max-width: 767.98px) {
   #logo-nav {
     font-size: 1.3rem;
     padding: 0.5rem 0.3rem;
@@ -76,6 +84,23 @@ input {
   }
 }
 
-/* SMALL SCREEN */
-@media (max-width: 576px) {
+/* EXTRA SMALL SCREEN */
+@media (max-width: 575.98px) {
+  #logo-nav {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .search-field {
+    font-size: 0.9rem;
+    padding: 0.62rem 0.2rem 0.15rem 0.2rem;
+  }
+
+  #basic-addon2 {
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem 0.15rem 0.5rem;
+  }
+  .search-button {
+    font-size: 1.3rem;
+  }
 }
