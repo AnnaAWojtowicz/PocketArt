@@ -12,7 +12,7 @@ function Home() {
         <div className="background-home">
             <div className="home">
                 <NavBar />
-                {/* <div className="home-text-container">
+                <div className="home-text-container">
                     <div className="home-text-1">
                         <span className="discover">discover </span>
                         <span id="art">Art</span>
@@ -20,8 +20,8 @@ function Home() {
                     <div className="home-text-2">
                         <span className="discover">  every day</span>
                     </div>
-                </div> */}
-                {/* <BigButton /> */}
+                </div>
+                <BigButton />
                 {/* <Footer /> */}
             </div>
         </div>
