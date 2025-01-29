@@ -22,7 +22,7 @@ function Home() {
                     </div>
                 </div>
                 <BigButton />
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
 

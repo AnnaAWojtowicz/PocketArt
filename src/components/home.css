@@ -26,9 +26,13 @@ body {
 
 .home {
   max-width: 1600px;
+  min-height: 230vh;
   padding: 1rem 3rem 2rem 3rem;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .home-text-container,
@@ -38,6 +42,8 @@ nav,
   position: relative;
   z-index: 3;
 }
+
+/* discover art everyday*/
 
 .home-text-container {
   padding-top: 4rem;
@@ -62,6 +68,45 @@ nav,
   font-size: 10rem;
 }
 
+/* footer */
+
+.footer-container {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.about-us-img {
+  width: 6rem;
+  height: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.footer-text {
+  font-family: "Poltawski Nowy", serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.footer-name {
+  font-family: Cormorant Unicase, serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.footer-year {
+  font-family: "Poltawski Nowy", serif;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* EXTRA LARGE SCREEN */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .background-home {
@@ -70,10 +115,13 @@ nav,
 
   .home {
     max-width: 1400px;
+    /* min-height: 170vh; */
     padding: 1rem 3rem 2rem 3rem;
     width: 100%;
     margin: 0 auto;
   }
+
+  /* discover art everyday*/
 
   .discover {
     font-size: 8.5rem;
@@ -82,14 +130,21 @@ nav,
 
   #art {
     font-size: 8.5rem;
+  }
+
+  /* footer */
+
+  .footer-container {
   }
 }
 
 /* LARGE SCREEN */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .background-home {
-    min-height: 145vh;
+    min-height: 180vh;
   }
+
+  /* discover art everyday*/
 
   .discover {
     font-size: 7rem;
@@ -98,6 +153,11 @@ nav,
 
   #art {
     font-size: 7rem;
+  }
+
+  /* footer */
+
+  .footer-container {
   }
 }
 
@@ -112,6 +172,8 @@ nav,
     width: 100%;
     margin: 0 auto;
   }
+
+  /* discover art everyday*/
 
   .discover {
     font-size: 5rem;
@@ -134,6 +196,8 @@ nav,
     width: 100%;
     margin: 0 auto;
   }
+
+  /* discover art everyday*/
 
   .home-text-container {
     padding-top: 2rem;
@@ -184,6 +248,9 @@ nav,
     max-width: 575px;
     margin: 0 auto;
   }
+
+  /* discover art everyday*/
+
   .home-text-container {
     padding-top: 1rem;
   }
@@ -196,46 +263,4 @@ nav,
   #art {
     font-size: 4rem;
   }
-}
-
-/* .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-.about-us-img {
-  width: 6rem;
-  height: 100%;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  margin: 0.5rem;
-}
-
-.footer-text {
-  font-family: "Poltawski Nowy", serif;
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin: 0.5rem;
-}
-
-.footer-name {
-  font-family: Cormorant Unicase, serif;
-  color: #ffffff;
-  font-size: 1.2rem;
-}
-
-.footer-year {
-  font-family: "Poltawski Nowy", serif;
-  color: #ffffff;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 1rem;
 }
