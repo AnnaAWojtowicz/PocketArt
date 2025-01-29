@@ -151,7 +151,7 @@ nav,
 
 /* EXTRA SMALL SCREEN */
 @media (max-width: 575.98px) {
-  .background-home {
+  /* .background-home {
     min-height: 100vh;
   }
 
@@ -172,6 +172,29 @@ nav,
 
   #art {
     font-size: 2.5rem;
+  } */
+
+  .background-home {
+    min-height: 100vh;
+  }
+
+  .home {
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    max-width: 575px;
+    margin: 0 auto;
+  }
+  .home-text-container {
+    padding-top: 1rem;
+  }
+
+  .discover {
+    font-size: 4rem;
+    line-height: 0.7;
+  }
+
+  #art {
+    font-size: 4rem;
   }
 }
 

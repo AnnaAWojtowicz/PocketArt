@@ -148,7 +148,7 @@
 
 /* EXTRA SMALL SCREEN */
 @media (max-width: 575.98px) {
-  .big-buttons-container {
+  /* .big-buttons-container {
     margin: 1rem 0;
   }
 
@@ -163,5 +163,22 @@
     width: 6rem;
     height: 6rem;
     margin-top: 2rem;
+  } */
+
+  .big-buttons-container {
+    margin: 1rem 0;
+  }
+
+  .big-button {
+    margin: 0.5em;
+    left: 65%;
+  }
+
+  #big-button-1,
+  #big-button-2 {
+    font-size: 1.3rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 3rem;
   }
 }
