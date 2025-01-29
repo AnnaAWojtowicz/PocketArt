@@ -1,7 +1,8 @@
 .big-buttons-container {
-  margin: 7rem 0;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
+  align-items: space-between;
   z-index: 4;
 }
 
@@ -13,7 +14,7 @@
   cursor: pointer;
   display: block;
   margin: 0.5em;
-  left: 67%;
+  left: 64%;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -29,8 +30,9 @@
   font-size: 3rem;
   color: #f7f7f7;
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
+  margin-top: 6rem;
 }
 
 #big-button-1::before,
@@ -66,20 +68,100 @@
 
 /* EXTRA LARGE SCREEN */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .big-buttons-container {
+    margin: 4rem 0;
+  }
+
+  .big-button {
+    margin: 0.5em;
+    left: 64%;
+  }
+
+  #big-button-1,
+  #big-button-2 {
+    font-size: 3rem;
+    width: 22rem;
+    height: 22rem;
+    margin-top: 5rem;
+  }
 }
 
 /* LARGE SCREEN */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .big-buttons-container {
+    margin: 2rem 0;
+  }
+
+  .big-button {
+    margin: 0.5em;
+    left: 63%;
+  }
+
+  #big-button-1,
+  #big-button-2 {
+    font-size: 2.5rem;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3rem;
+  }
 }
 
 /* MEDIUM SCREEN */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .big-buttons-container {
+    margin: 1rem 0;
+  }
+
+  .big-button {
+    margin: 0.5em;
+    left: 63%;
+  }
+
+  #big-button-1,
+  #big-button-2 {
+    font-size: 2rem;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 2rem;
+  }
 }
 
 /* SMALL SCREEN */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .big-buttons-container {
+    margin: 1rem 0;
+  }
+
+  .big-button {
+    margin: 0.5em;
+    left: 63%;
+  }
+
+  #big-button-1,
+  #big-button-2 {
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 12rem;
+    margin-top: 2rem;
+  }
 }
 
 /* EXTRA SMALL SCREEN */
 @media (max-width: 575.98px) {
+  .big-buttons-container {
+    margin: 1rem 0;
+  }
+
+  .big-button {
+    margin: 0.5em;
+    left: 71%;
+  }
+
+  #big-button-1,
+  #big-button-2 {
+    font-size: 0.9rem;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 2rem;
+  }
 }
