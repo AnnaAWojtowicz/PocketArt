@@ -175,15 +175,39 @@ nav,
 }
 
 /* MEDIUM SCREEN */
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-   .background-home {
-    
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-text-container {
+    padding-top: 2rem;
   }
 
-  .home {
-   
+  .discover,
+  #art {
+    font-size: 5.5rem;
+    line-height: 0.9;
   }
-} */
+
+  .footer-container {
+    padding: 0.5rem;
+  }
+
+  .about-us-img {
+    width: 5rem;
+    margin: 0.4rem;
+  }
+
+  .footer-text,
+  .footer-name {
+    font-size: 1rem;
+  }
+
+  .footer-year {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 900px) {
+}
 
 /* SMALL SCREEN */
 /* @media (min-width: 576px) and (max-width: 767.98px) {
@@ -194,7 +218,7 @@ nav,
   .home {
    
   }
-} */
+}
 
 /* EXTRA SMALL SCREEN */
 /* @media (max-width: 575.98px) {
