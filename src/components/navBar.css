@@ -1,4 +1,8 @@
 .nav-container {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;

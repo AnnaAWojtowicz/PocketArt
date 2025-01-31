@@ -8,31 +8,32 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poltawski Nowy", serif;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .background-home {
   position: relative;
-  min-height: 180vh;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
+  aspect-ratio: 9 / 16;
   margin: auto;
   background-image: url("../assets/img/Weyden1.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-attachment: scroll;
 }
 
 .home {
-  max-width: 1600px;
-  min-height: 230vh;
-  padding: 1rem 3rem 2rem 3rem;
   width: 100%;
+  max-width: 1400px;
+  height: 90%;
+  padding: 1rem 3rem 2rem 3rem;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 4% 23% 64% 9%;
+  z-index: 1;
 }
 
 .home-text-container,
@@ -46,7 +47,12 @@ nav,
 /* discover art everyday*/
 
 .home-text-container {
-  padding-top: 4rem;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-text-1,
@@ -58,20 +64,29 @@ nav,
   font-family: "Poltawski Nowy", serif;
   font-style: italic;
   color: #ffffff;
-  font-size: 10rem;
+  font-size: 9rem;
   line-height: 0.7;
 }
 
 #art {
   font-family: Cormorant Unicase, serif;
   color: #ffffff;
-  font-size: 10rem;
+  font-size: 9rem;
 }
 
 /* footer */
 
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer-container {
-  align-self: flex-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,159 +123,57 @@ nav,
 }
 
 /* EXTRA LARGE SCREEN */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .background-home {
-    min-height: 170vh;
+@media (min-width: 1300px) {
+  .home-text-container {
+    padding-top: 2rem;
   }
 
-  .home {
-    max-width: 1400px;
-    /* min-height: 170vh; */
-    padding: 1rem 3rem 2rem 3rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  /* discover art everyday*/
-
-  .discover {
-    font-size: 8.5rem;
-    line-height: 0.7;
-  }
-
+  .discover,
   #art {
-    font-size: 8.5rem;
-  }
-
-  /* footer */
-
-  .footer-container {
+    font-size: 10rem;
+    line-height: 0.9;
   }
 }
 
 /* LARGE SCREEN */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .background-home {
-    min-height: 180vh;
   }
 
-  /* discover art everyday*/
-
-  .discover {
-    font-size: 7rem;
-    line-height: 0.7;
-  }
-
-  #art {
-    font-size: 7rem;
-  }
-
-  /* footer */
-
-  .footer-container {
+  .home {
   }
 }
 
 /* MEDIUM SCREEN */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .background-home {
-    min-height: 110vh;
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+   .background-home {
+    
   }
 
   .home {
-    padding: 1rem 3rem 2rem 3rem;
-    width: 100%;
-    margin: 0 auto;
+   
   }
-
-  /* discover art everyday*/
-
-  .discover {
-    font-size: 5rem;
-    line-height: 0.7;
-  }
-
-  #art {
-    font-size: 5rem;
-  }
-}
+} */
 
 /* SMALL SCREEN */
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* @media (min-width: 576px) and (max-width: 767.98px) {
   .background-home {
-    min-height: 100vh;
+    
   }
 
   .home {
-    padding: 1rem 2rem 2rem 2rem;
-    width: 100%;
-    margin: 0 auto;
+   
   }
-
-  /* discover art everyday*/
-
-  .home-text-container {
-    padding-top: 2rem;
-  }
-
-  .discover {
-    font-size: 4rem;
-    line-height: 0.7;
-  }
-
-  #art {
-    font-size: 4rem;
-  }
-}
+} */
 
 /* EXTRA SMALL SCREEN */
-@media (max-width: 575.98px) {
-  /* .background-home {
-    min-height: 100vh;
-  }
-
-  .home {
-    padding: 1rem 1rem 1rem 1rem;
-    width: 100%;
-    max-width: 575px;
-    margin: 0 auto;
-  }
-  .home-text-container {
-    padding-top: 1rem;
-  }
-
-  .discover {
-    font-size: 2.5rem;
-    line-height: 0.7;
-  }
-
-  #art {
-    font-size: 2.5rem;
-  } */
-
+/* @media (max-width: 575.98px) {
   .background-home {
-    min-height: 100vh;
+    
   }
 
   .home {
-    padding: 1rem 1rem 1rem 1rem;
-    width: 100%;
-    max-width: 575px;
-    margin: 0 auto;
+   
   }
 
-  /* discover art everyday*/
-
-  .home-text-container {
-    padding-top: 1rem;
-  }
-
-  .discover {
-    font-size: 4rem;
-    line-height: 0.7;
-  }
-
-  #art {
-    font-size: 4rem;
-  }
-}
+} */

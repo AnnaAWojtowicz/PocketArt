@@ -1,5 +1,8 @@
 .big-buttons-container {
-  margin: 5rem 0 27rem 0;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -30,9 +33,9 @@
   font-size: 3rem;
   color: #f7f7f7;
   position: relative;
-  width: 25rem;
-  height: 25rem;
-  margin-top: 6rem;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 5rem;
 }
 
 #big-button-1::before,
@@ -68,26 +71,21 @@
 
 /* EXTRA LARGE SCREEN */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .big-buttons-container {
-    margin: 4rem 0;
-  }
-
-  .big-button {
-    margin: 0.5em;
-    left: 64%;
-  }
-
   #big-button-1,
   #big-button-2 {
-    font-size: 3rem;
-    width: 22rem;
-    height: 22rem;
-    margin-top: 5rem;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .big-button {
+    left: 66%;
   }
 }
 
 /* LARGE SCREEN */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
   .big-buttons-container {
     margin: 2rem 0;
   }
@@ -104,10 +102,10 @@
     height: 20rem;
     margin-top: 3rem;
   }
-}
+} */
 
 /* MEDIUM SCREEN */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (min-width: 768px) and (max-width: 991.98px) {
   .big-buttons-container {
     margin: 1rem 0;
   }
@@ -124,10 +122,10 @@
     height: 15rem;
     margin-top: 2rem;
   }
-}
+} */
 
 /* SMALL SCREEN */
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* @media (min-width: 576px) and (max-width: 767.98px) {
   .big-buttons-container {
     margin: 1rem 0;
   }
@@ -144,27 +142,10 @@
     height: 12rem;
     margin-top: 2rem;
   }
-}
+} */
 
 /* EXTRA SMALL SCREEN */
-@media (max-width: 575.98px) {
-  /* .big-buttons-container {
-    margin: 1rem 0;
-  }
-
-  .big-button {
-    margin: 0.5em;
-    left: 71%;
-  }
-
-  #big-button-1,
-  #big-button-2 {
-    font-size: 0.9rem;
-    width: 6rem;
-    height: 6rem;
-    margin-top: 2rem;
-  } */
-
+/* @media (max-width: 575.98px) {
   .big-buttons-container {
     margin: 1rem 0;
   }
@@ -181,4 +162,4 @@
     height: 10rem;
     margin-top: 3rem;
   }
-}
+} */
