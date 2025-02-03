@@ -1,0 +1,52 @@
+.small-buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#small-button-1,
+#small-button-2,
+#small-button-3 {
+  background-color: #1e1e1e;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  z-index: 4;
+  position: relative;
+}
+
+#small-button-1-img {
+  background-image: url("../assets/img/Gogh.jpg");
+}
+
+#small-button-2-img {
+  background-image: url("../assets/img/Copley.jpg");
+}
+
+#small-button-3-img {
+  background-image: url("../assets/img/Rossetti.jpg");
+}
+
+#small-button-1-img,
+#small-button-2-img,
+#small-button-3-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid #e7e7e7;
+}
+
+#small-button-1-label,
+#small-button-2-label,
+#small-button-3-label {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 1.5rem;
+  color: #f7f7f7;
+  position: relative;
+  z-index: 2;
+}

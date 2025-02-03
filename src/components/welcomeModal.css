@@ -2,3 +2,23 @@
   position: fixed;
   z-index: 1050 !important;
 }
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  background-color: #1e1e1e;
+}
+
+.modal-header .btn-close {
+  --bs-btn-close-color: #f7f7f7 !important;
+}
+
+#contained-modal-title-vcenter {
+  font-family: Cormorant Unicase, serif !important;
+  color: #f7f7f7;
+}
+
+.modal-footer {
+  font-family: "Poltawski Nowy", serif;
+  color: #f7f7f7;
+}
