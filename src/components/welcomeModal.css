@@ -9,7 +9,13 @@
   background-color: #1e1e1e;
 }
 
-.modal-header .btn-close {
+.modal-header {
+  border-top: 1px #f7f7f7 solid;
+  border-left: 1px #f7f7f7 solid;
+  border-right: 1px #f7f7f7 solid;
+}
+
+button .btn-close {
   --bs-btn-close-color: #f7f7f7 !important;
 }
 
@@ -18,7 +24,16 @@
   color: #f7f7f7;
 }
 
+.modal-body {
+  border-left: 1px #f7f7f7 solid;
+  border-right: 1px #f7f7f7 solid;
+}
+
 .modal-footer {
   font-family: "Poltawski Nowy", serif;
   color: #f7f7f7;
+  padding: 1.5rem;
+  border-bottom: 1px #f7f7f7 solid;
+  border-left: 1px #f7f7f7 solid;
+  border-right: 1px #f7f7f7 solid;
 }

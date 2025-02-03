@@ -15,7 +15,7 @@ function WelcomeModal(props) {
                     Hi! Welcome to Today's Quiz!
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body className="grid-example">
+            <Modal.Body>
                 <ModalSmallButtons />
             </Modal.Body>
             <Modal.Footer>
