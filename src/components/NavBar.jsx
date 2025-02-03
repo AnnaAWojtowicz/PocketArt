@@ -19,7 +19,7 @@ function NavBar() {
                     placeholder=""
                     className="mr-sm-2 search-field"
                 />
-                <Button type="submit" id="basic-addon2"><span class="material-symbols-outlined search-button">
+                <Button type="submit" id="basic-addon2"><span className="material-symbols-outlined search-button">
                     search
                 </span></Button>
 

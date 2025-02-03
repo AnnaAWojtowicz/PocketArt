@@ -1,0 +1,4 @@
+.welcome-modal {
+  position: fixed;
+  z-index: 1050 !important;
+}
