@@ -10,7 +10,7 @@ import ModalSmallButtons from './ModalSmallButtons';
 function WelcomeModal(props) {
     return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className='welcome-modal'>
-            <Modal.Header closeButton>
+            <Modal.Header closeButton data-bs-theme="dark">
                 <Modal.Title id="contained-modal-title-vcenter">
                     Hi! Welcome to Today's Quiz!
                 </Modal.Title>

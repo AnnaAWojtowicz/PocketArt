@@ -15,7 +15,7 @@
   border-right: 1px #f7f7f7 solid;
 }
 
-button .btn-close {
+.btn-close {
   --bs-btn-close-color: #f7f7f7 !important;
 }
 
