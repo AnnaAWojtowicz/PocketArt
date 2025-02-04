@@ -39,6 +39,34 @@
   margin: 2rem 0;
 }
 
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d3cabe !important;
+  --bs-btn-border-color: #d3cabe !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: #d3cabe !important;
+  --bs-btn-hover-border-color: #d3cabe !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-active-bg: #d3cabe !important;
+  --bs-btn-active-border-color: #d3cabe !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff !important;
+  --bs-btn-disabled-bg: #d3cabe !important;
+  --bs-btn-disabled-border-color: #d3cabe !important;
+}
+
+.submit-button-get-in {
+  display: block !important;
+  margin: 2rem auto !important;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
 .note-get-in {
   text-align: center;
   font-family: "Poltawski Nowy", serif;
