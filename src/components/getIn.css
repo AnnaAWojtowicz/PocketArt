@@ -1,0 +1,52 @@
+.get-in-container {
+  display: flex;
+  width: 100%;
+}
+
+.form-get-in {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-get-in {
+  background-image: url("../assets/img/Weyden2.jpg");
+  width: 50%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-get-in {
+  display: block !important;
+  margin: auto;
+  text-align: center;
+  font-family: Cormorant Unicase, serif;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.3rem;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  width: fit-content;
+}
+
+.what-to-do-get-in {
+  text-align: center;
+  font-family: Cormorant Unicase, serif;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 2rem 0;
+}
+
+.note-get-in {
+  text-align: center;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 1.5rem 0;
+}
+
+.note-link-get-in {
+  text-decoration: underline;
+}
