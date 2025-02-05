@@ -1,10 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .get-in-container {
   display: flex;
+  justify-content: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .form-get-in {
   width: 50%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,8 +21,10 @@
 }
 
 .background-get-in {
+  position: relative;
   background-image: url("../assets/img/Weyden2.jpg");
   width: 50%;
+  max-width: 700px;
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
