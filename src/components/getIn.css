@@ -51,6 +51,10 @@
   margin: 2rem 0;
 }
 
+.form-label {
+  color: #ffffff;
+}
+
 .form-control:focus {
   border-color: #d3cabe !important;
   box-shadow: 0 0 0 0.25rem rgba(211, 202, 190, 0.5) !important;
@@ -126,10 +130,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  .form-label {
-    color: #ffffff;
-  }
 }
 
 /*  EXTRA SMALL SCREEN */
@@ -161,9 +161,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .form-label {
-    color: #ffffff;
   }
 }
