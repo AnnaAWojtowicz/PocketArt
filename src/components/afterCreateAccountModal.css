@@ -1,0 +1,22 @@
+.modal-header {
+  font-family: Cormorant Unicase, serif !important;
+  color: #f7f7f7;
+}
+
+.modal-body {
+  font-family: "Poltawski Nowy", serif;
+  color: #f7f7f7;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-after-create-account {
+  display: block !important;
+  margin: 0 auto !important;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Poltawski Nowy", serif !important;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
