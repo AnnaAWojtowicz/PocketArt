@@ -23,7 +23,8 @@
 }
 
 .todays-art-text {
-  margin-top: 5rem;
+  font-family: "Poltawski Nowy", serif;
+  margin: 5rem 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
@@ -35,6 +36,10 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
+  gap: 0 3rem;
+  justify-items: start;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 .todays-art-label {
@@ -47,11 +52,16 @@
   grid-column-end: 5;
 }
 
-#todays-art-artist {
-  grid-row-start: 1;
-  grid-row-end: 2;
+.todays-art-details-1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.todays-art-info {
-  margin-top: 3rem;
+.todays-art-details-2,
+.todays-art-details-3 {
+  font-size: 1.3rem;
+}
+
+.former-title {
+  font-style: italic;
 }

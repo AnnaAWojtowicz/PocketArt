@@ -23,21 +23,21 @@ function TodaysArt() {
                         <span className="todays-art-details-container">
                             <div className="todays-art-details-1">When the Morning Stars Sang Together</div>
                             <div className="todays-art-details-2">All the Sons of God Shouted for Joy</div>
-                            <div className="todays-art-details-3">Former Title: When the Morning Stars Sang Together</div>
+                            {/* <div className="todays-art-details-3"><span className="former-title">Former Title:</span> When the Morning Stars Sang Together</div> */}
                         </span>
                     </div>
 
                     <div className="todays-art-info" id="todays-art-date">
                         <span className="todays-art-label">Date</span>
                         <span className="todays-art-details-container">
-                            <div className="todays-art-details-1">c. 1884-1885</div>
+                            <div className="todays-art-details-2">c. 1884-1885</div>
                         </span>
                     </div>
 
                     <div className="todays-art-info" id="todays-art-medium">
                         <span className="todays-art-label">Medium</span>
                         <span className="todays-art-details-container">
-                            <div className="todays-art-details-1">Stained Glass</div>
+                            <div className="todays-art-details-2">Stained Glass</div>
                         </span>
                     </div>
 
@@ -45,7 +45,7 @@ function TodaysArt() {
                     <div className="todays-art-info" id="todays-art-culture">
                         <span className="todays-art-label">Culture</span>
                         <span className="todays-art-details-container">
-                            <div className="todays-art-details-1">American</div>
+                            <div className="todays-art-details-2">American</div>
                         </span>
                     </div>
 
