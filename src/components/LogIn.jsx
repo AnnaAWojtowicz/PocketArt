@@ -6,7 +6,7 @@ function LogIn() {
     return (<>
         <div className="">
             <div className="logo-get-in">PocketArt</div>
-            <div className="what-to-do-get-in">Create an account</div>
+            <div className="what-to-do-get-in">Log in</div>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
