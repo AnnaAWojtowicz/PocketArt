@@ -6,7 +6,7 @@ function TodaysArt() {
         <>
             <div className="todays-art-logo">PocketArt</div>
             <div className="todays-art-container">
-                <div className="todays-art-img"><img src={todaysArt1} alt="Girl in a jacket" width="500" height="600" /></div>
+                <div className="todays-art-img-container"><img src={todaysArt1} alt="some art" className="todays-art-img" /></div>
 
                 <div className="todays-art-text">
 
