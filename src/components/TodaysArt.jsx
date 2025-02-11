@@ -1,5 +1,7 @@
 import "./todaysArt.css";
 import todaysArt1 from "../assets/img/todaysart1.jpeg";
+import TodaysArtTextComponent from "./TodaysArtTextComponent.jsx";
+
 
 function TodaysArt() {
     return (
@@ -9,6 +11,7 @@ function TodaysArt() {
                 <div className="todays-art-img-container"><img src={todaysArt1} alt="some art" className="todays-art-img" /></div>
 
                 <div className="todays-art-text">
+                    <TodaysArtTextComponent />
 
                     <div className="todays-art-info" id="todays-art-artist">
                         <span className="todays-art-label">Artist</span>
