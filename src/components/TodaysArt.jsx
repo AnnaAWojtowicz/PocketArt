@@ -1,7 +1,7 @@
 import "./todaysArt.css";
 import todaysArt1 from "../assets/img/todaysart1.jpeg";
 import TodaysArtTextComponent from "./TodaysArtTextComponent.jsx";
-
+import { todaysArtData } from "../api/data.js";
 
 function TodaysArt() {
     return (
@@ -11,9 +11,13 @@ function TodaysArt() {
                 <div className="todays-art-img-container"><img src={todaysArt1} alt="some art" className="todays-art-img" /></div>
 
                 <div className="todays-art-text">
-                    <TodaysArtTextComponent />
+                    <TodaysArtTextComponent label="Artist" data1={todaysArtData[0].artist} data2={todaysArtData[0].artistDates} />
+                    <TodaysArtTextComponent label="Title" data1={todaysArtData[0].title1} data2={todaysArtData[0].title2} />
+                    <TodaysArtTextComponent label="Date" data1={todaysArtData[0].date} />
+                    <TodaysArtTextComponent label="Work Type" data1={todaysArtData[0].workType} />
+                    <TodaysArtTextComponent label="Culture" data1={todaysArtData[0].culture} />
 
-                    <div className="todays-art-info" id="todays-art-artist">
+                    {/* <div className="todays-art-info" id="todays-art-artist">
                         <span className="todays-art-label">Artist</span>
                         <span className="todays-art-details-container">
                             <div className="todays-art-details-1">John La Farge</div>
@@ -26,7 +30,7 @@ function TodaysArt() {
                         <span className="todays-art-details-container">
                             <div className="todays-art-details-1">When the Morning Stars Sang Together</div>
                             <div className="todays-art-details-2">All the Sons of God Shouted for Joy</div>
-                            {/* <div className="todays-art-details-3"><span className="former-title">Former Title:</span> When the Morning Stars Sang Together</div> */}
+                            <div className="todays-art-details-3"><span className="former-title">Former Title:</span> When the Morning Stars Sang Together</div>
                         </span>
                     </div>
 
@@ -50,7 +54,7 @@ function TodaysArt() {
                         <span className="todays-art-details-container">
                             <div className="todays-art-details-2">American</div>
                         </span>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
