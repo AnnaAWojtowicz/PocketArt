@@ -34,8 +34,8 @@ function TodaysArt() {
                         </span>
                     </div>
 
-                    <div className="todays-art-info" id="todays-art-medium">
-                        <span className="todays-art-label">Medium</span>
+                    <div className="todays-art-info" id="todays-art-work-type">
+                        <span className="todays-art-label">Work Type</span>
                         <span className="todays-art-details-container">
                             <div className="todays-art-details-2">Stained Glass</div>
                         </span>
