@@ -117,4 +117,9 @@ input {
   .search-button {
     font-size: 1.2rem;
   }
+
+  .nav-profile-img {
+    width: 3rem;
+    height: 3rem;
+  }
 }
