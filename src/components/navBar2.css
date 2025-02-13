@@ -1,0 +1,120 @@
+.nav-container {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#logo-nav {
+  display: inline !important;
+  font-family: Cormorant Unicase, serif;
+  font-size: 2rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.search-field {
+  background-color: #d3cabe;
+  color: #333;
+  border: 1px solid #e7e7e7;
+  border-radius: 25px 0 0 25px;
+  font-size: 1.4rem;
+  text-align: end;
+  padding: 0.5rem 0.2rem 0.15rem 0.2rem;
+}
+
+#basic-addon2 {
+  font-size: 1.5rem;
+  background-color: #d3cabe;
+  color: #333;
+  border: 1px solid #e7e7e7;
+  border-radius: 0 25px 25px 0;
+  padding: 0.3rem 0.5rem 0.15rem 0.5rem;
+}
+
+.search-button {
+  background-color: #d3cabe;
+}
+
+input {
+  font-family: Cormorant Unicase, serif;
+}
+
+.nav-profile-img {
+  background-image: url("../assets/img/Gogh.jpg");
+  background-size: cover;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* EXTRA LARGE SCREEN */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* LARGE SCREEN */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* MEDIUM SCREEN */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #logo-nav {
+    font-size: 1.75rem;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .search-field {
+    font-size: 1.3rem;
+    padding: 0.62rem 0.2rem 0.15rem 0.2rem;
+  }
+
+  #basic-addon2 {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem 0.15rem 0.5rem;
+  }
+}
+
+/* SMALL SCREEN */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #logo-nav {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .search-field {
+    font-size: 1.1rem;
+    padding: 0.62rem 0.2rem 0.15rem 0.2rem;
+  }
+
+  #basic-addon2 {
+    font-size: 1.3rem;
+    padding: 0.15rem 0.5rem 0.1rem 0.5rem;
+  }
+}
+
+/* EXTRA SMALL SCREEN */
+@media (max-width: 575.98px) {
+  #logo-nav {
+    font-size: 1rem;
+    padding: 0.4rem 0.2rem;
+  }
+
+  .search-field {
+    font-size: 0.8rem;
+    padding: 0.55rem 0.2rem 0.08rem 0.2rem;
+  }
+
+  #basic-addon2 {
+    font-size: 0.9rem;
+    padding: 0.12rem 0.5rem 0.1rem 0.5rem;
+  }
+  .search-button {
+    font-size: 1.2rem;
+  }
+}
