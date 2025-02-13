@@ -11,18 +11,20 @@
 .todays-site-container {
   width: 100%;
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto 3rem auto;
   padding: 0 1.5rem;
 }
 
-.todays-art-logo {
-  display: inline-block;
-  margin: 1rem 0 1rem 1rem;
-  font-family: Cormorant Unicase, serif;
-  font-size: 1.5rem;
-  padding: 0.3rem 0.3rem;
-  border: 1px solid #ffffff;
+.todays-art-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
   color: #ffffff;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
 }
 
 .todays-art-container {
@@ -103,6 +105,9 @@
 /* .former-title {
     font-style: italic;
   } */
+
+#todays-quiz-btn {
+}
 
 /* EXTRA SMALL SCREEN */
 @media (max-width: 575.98px) {
