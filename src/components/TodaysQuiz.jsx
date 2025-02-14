@@ -42,7 +42,7 @@ function TodaysQuiz() {
                 </div>
                 <QuizModal
                     show={show}
-                    onHide={handleClose}
+                    handleClose={handleClose}
                     backdrop="static"
                     keyboard={false} />
             </div>

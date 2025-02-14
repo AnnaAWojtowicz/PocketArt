@@ -12,37 +12,25 @@ function QuizModal({ show, handleClose }) {
                 backdrop="static"
                 keyboard={false}
             >
-                <Modal.Header closeButton>
+                <Modal.Header closeButton data-bs-theme="dark">
                     <Modal.Title>Hi NAME!</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div>
-                        I will not close if you click outside me. Do not even try to press
-                        escape key.
-                    </div>
+                    Question comes here
+                </Modal.Body>
+                <Modal.Body>
                     <Form>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control
-                                type="email"
-                                placeholder="name@example.com"
-                                autoFocus
-                            />
-                        </Form.Group>
                         <Form.Group
                             className="mb-3"
                             controlId="exampleForm.ControlTextarea1"
                         >
-                            <Form.Label>Example textarea</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Label>Write your awsome answer here:</Form.Label>
+                            <Form.Control as="textarea" rows={1} />
                         </Form.Group>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary">Understood</Button>
+                    <Button variant="primary" className="submit-todays-quiz-modal" onClick={handleClose}>Submit</Button>
                 </Modal.Footer>
             </Modal>
 

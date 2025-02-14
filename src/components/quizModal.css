@@ -1,0 +1,10 @@
+.submit-todays-quiz-modal {
+  display: block !important;
+  margin: 0 auto !important;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Poltawski Nowy", serif !important;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
