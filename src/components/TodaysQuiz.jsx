@@ -23,21 +23,20 @@ function TodaysQuiz() {
                 <NavBar2 />
 
                 <div className="todays-art-container">
-
                     <div className="todays-art-title-container">
                         <h1 className="todays-art-title">Oh, hey! Do you remember this?</h1>
                         <h4>...if you do and you're ready for today's quiz, keep scrolling!</h4>
                     </div>
                     <div className="todays-art-img-container"><img src={todaysArt1} alt="some art" className="todays-art-img" /></div>
-
-                    <div className="todays-art-text">
-                        <TodaysArtTextComponent label="Artist" data1={todaysArtData[0].artist} data2={todaysArtData[0].artistDates} />
-                        <TodaysArtTextComponent label="Title" data1={todaysArtData[0].title1} data2={todaysArtData[0].title2} />
-                        <TodaysArtTextComponent label="Date" data1={todaysArtData[0].date} />
-                        <TodaysArtTextComponent label="Work Type" data1={todaysArtData[0].workType} />
-                        <TodaysArtTextComponent label="Culture" data1={todaysArtData[0].culture} />
-                    </div>
-
+                    {!show && (
+                        <div className="todays-art-text">
+                            <TodaysArtTextComponent label="Artist" data1={todaysArtData[0].artist} data2={todaysArtData[0].artistDates} />
+                            <TodaysArtTextComponent label="Title" data1={todaysArtData[0].title1} data2={todaysArtData[0].title2} />
+                            <TodaysArtTextComponent label="Date" data1={todaysArtData[0].date} />
+                            <TodaysArtTextComponent label="Work Type" data1={todaysArtData[0].workType} />
+                            <TodaysArtTextComponent label="Culture" data1={todaysArtData[0].culture} />
+                        </div>
+                    )}
                     <Button type="submit" id="todays-quiz-btn" size="lg" onClick={handleShow}>Today's Quiz</Button>
                 </div>
                 <QuizModal
