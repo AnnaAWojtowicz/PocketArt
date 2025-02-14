@@ -4,8 +4,19 @@ import TodaysArtTextComponent from "./TodaysArtTextComponent.jsx";
 import Button from "react-bootstrap/Button";
 import { todaysArtData } from "../api/data.js";
 import NavBar2 from "./NavBar2.jsx";
+import QuizModal from "./QuizModal.jsx";
+import { useState } from 'react';
+
+
+
 
 function TodaysQuiz() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
     return (
         <>
             <div className="todays-site-container">
@@ -27,8 +38,13 @@ function TodaysQuiz() {
                         <TodaysArtTextComponent label="Culture" data1={todaysArtData[0].culture} />
                     </div>
 
-                    <Button type="submit" id="todays-quiz-btn" size="lg">Today's Quiz</Button>
+                    <Button type="submit" id="todays-quiz-btn" size="lg" onClick={handleShow}>Today's Quiz</Button>
                 </div>
+                <QuizModal
+                    show={show}
+                    onHide={handleClose}
+                    backdrop="static"
+                    keyboard={false} />
             </div>
         </>
     );
