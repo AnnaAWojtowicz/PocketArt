@@ -3,6 +3,13 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+const questionGen = ["Who created this art?", "What is the title of this art?", "When was this art created?", "What is the type of this art?", "What is the culture of this art?"];
+
+function generateQuestion(max) {
+    return Math.floor(Math.random() * (max + 1));
+}
+
+
 function QuizModal({ show, handleClose }) {
     return (
         <>
@@ -16,7 +23,7 @@ function QuizModal({ show, handleClose }) {
                     <Modal.Title>Hi NAME!</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Question comes here
+                    {questionGen[generateQuestion(4)]}
                 </Modal.Body>
                 <Modal.Body>
                     <Form>
