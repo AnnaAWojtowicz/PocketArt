@@ -11,10 +11,10 @@ import { useState } from 'react';
 
 
 function TodaysQuiz() {
-    const [show, setShow] = useState(false);
+    const [showQuizModal, setShowQuizModal] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleCloseQuizModal = () => setShowQuizModal(false);
+    const handleShowQuizModal = () => setShowQuizModal(true);
 
 
     return (
@@ -28,7 +28,7 @@ function TodaysQuiz() {
                         <h4>...if you do and you're ready for today's quiz, keep scrolling!</h4>
                     </div>
                     <div className="todays-art-img-container"><img src={todaysArt1} alt="some art" className="todays-art-img" /></div>
-                    {!show && (
+                    {!showQuizModal && (
                         <div className="todays-art-text">
                             <TodaysArtTextComponent label="Artist" data1={todaysArtData[0].artist} data2={todaysArtData[0].artistDates} />
                             <TodaysArtTextComponent label="Title" data1={todaysArtData[0].title1} data2={todaysArtData[0].title2} />
@@ -37,11 +37,11 @@ function TodaysQuiz() {
                             <TodaysArtTextComponent label="Culture" data1={todaysArtData[0].culture} />
                         </div>
                     )}
-                    <Button type="submit" id="todays-quiz-btn" size="lg" onClick={handleShow}>Today's Quiz</Button>
+                    <Button type="submit" id="todays-quiz-btn" size="lg" onClick={handleShowQuizModal}>Today's Quiz</Button>
                 </div>
                 <QuizModal
-                    show={show}
-                    handleClose={handleClose}
+                    show={showQuizModal}
+                    handleClose={handleCloseQuizModal}
                     backdrop="static"
                     keyboard={false} />
             </div>
