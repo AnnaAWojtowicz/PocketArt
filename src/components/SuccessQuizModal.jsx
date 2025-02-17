@@ -1,20 +1,14 @@
-import "../quizModal.css";
+import "./quizModal.css";
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function SuccessQuizModal() {
-    const [showSuccessModal, setShowSuccessModal] = useState(false);
+function SuccessQuizModal({ show, handleClose }) {
 
-    const handleClose = () => setShowSuccessModal(false);
-    const handleShow = () => setShowSuccessModal(true);
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch static backdrop modal
-            </Button>
 
             <Modal
                 show={show}
@@ -22,17 +16,18 @@ function SuccessQuizModal() {
                 backdrop="static"
                 keyboard={false}
             >
-                <Modal.Header closeButton>
+                <Modal.Header closeButton data-bs-theme="dark">
                     <Modal.Title>Oh wow! You did it!</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     You have now SO MANY points! You're a quiz master! Keep it up!
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
+                <Modal.Footer className="modal-two-buttons">
+                    <Button variant="primary" onClick={handleClose}>
+                        Points Stats
                     </Button>
-                    <Button variant="primary">Understood</Button>
+                    <Button variant="primary">Home</Button>
+
                 </Modal.Footer>
             </Modal>
         </>

@@ -10,7 +10,13 @@ function generateQuestion(max) {
 }
 
 
-function QuizModal({ show, handleClose }) {
+function QuizModal({ show, handleClose, handleShowSuccessQuizModal }) {
+
+    const handleSubmit = () => {
+        handleClose();
+        handleShowSuccessQuizModal()
+    };
+
     return (
         <>
             <Modal
@@ -37,7 +43,7 @@ function QuizModal({ show, handleClose }) {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" className="submit-todays-quiz-modal" onClick={handleClose}>Submit</Button>
+                    <Button variant="primary" className="submit-todays-quiz-modal" onClick={handleSubmit}>Submit</Button>
                 </Modal.Footer>
             </Modal>
 

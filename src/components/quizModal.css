@@ -8,3 +8,8 @@
   padding: 0.5rem 1rem;
   border: none;
 }
+
+.modal-two-buttons {
+  display: flex;
+  justify-content: space-between;
+}

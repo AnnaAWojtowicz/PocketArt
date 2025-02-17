@@ -5,16 +5,25 @@ import Button from "react-bootstrap/Button";
 import { todaysArtData } from "../api/data.js";
 import NavBar2 from "./NavBar2.jsx";
 import QuizModal from "./QuizModal.jsx";
+import SuccessQuizModal from "./SuccessQuizModal.jsx";
 import { useState } from 'react';
 
 
 
 
 function TodaysQuiz() {
+    // QuizModal
     const [showQuizModal, setShowQuizModal] = useState(false);
 
     const handleCloseQuizModal = () => setShowQuizModal(false);
     const handleShowQuizModal = () => setShowQuizModal(true);
+
+    // SuccessQuizModal
+    const [showSuccessQuizModal, setShowSuccessQuizModal] = useState(false);
+
+    const handleCloseSuccessQuizModal = () => setShowSuccessQuizModal(false);
+    const handleShowSuccessQuizModal = () => setShowSuccessQuizModal(true);
+
 
 
     return (
@@ -42,8 +51,17 @@ function TodaysQuiz() {
                 <QuizModal
                     show={showQuizModal}
                     handleClose={handleCloseQuizModal}
+                    handleShowSuccessQuizModal={handleShowSuccessQuizModal}
                     backdrop="static"
                     keyboard={false} />
+                <SuccessQuizModal
+                    show={showSuccessQuizModal}
+                    handleClose={handleCloseSuccessQuizModal}
+                    // handleShowPointsStats={handleShowPointsStats}
+                    // handleShowHomeSite={handleShowHomeSite}
+                    backdrop="static"
+                    keyboard={false}
+                />
             </div>
         </>
     );
