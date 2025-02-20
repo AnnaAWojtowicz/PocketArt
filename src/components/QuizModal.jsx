@@ -10,11 +10,12 @@ function generateQuestion(max) {
 }
 
 
-function QuizModal({ show, handleClose, handleShowSuccessQuizModal }) {
+function QuizModal({ show, handleClose, handleShowSuccessQuizModal, handleShowFailQuizModal }) {
 
     const handleSubmit = () => {
         handleClose();
-        handleShowSuccessQuizModal()
+        // handleShowSuccessQuizModal();
+        handleShowFailQuizModal();
     };
 
     return (

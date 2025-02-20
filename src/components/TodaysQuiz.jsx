@@ -7,6 +7,7 @@ import NavBar2 from "./NavBar2.jsx";
 import QuizModal from "./QuizModal.jsx";
 import SuccessQuizModal from "./SuccessQuizModal.jsx";
 import { useState } from 'react';
+import FailQuizModal from "./FailQuizModal.jsx";
 
 
 
@@ -19,12 +20,16 @@ function TodaysQuiz() {
     const handleShowQuizModal = () => setShowQuizModal(true);
 
     // SuccessQuizModal
-    const [showSuccessQuizModal, setShowSuccessQuizModal] = useState(false);
+    // const [showSuccessQuizModal, setShowSuccessQuizModal] = useState(false);
 
-    const handleCloseSuccessQuizModal = () => setShowSuccessQuizModal(false);
-    const handleShowSuccessQuizModal = () => setShowSuccessQuizModal(true);
+    // const handleCloseSuccessQuizModal = () => setShowSuccessQuizModal(false);
+    // const handleShowSuccessQuizModal = () => setShowSuccessQuizModal(true);
 
+    // FailedQuizModal
+    const [showFailQuizModal, setShowFailQuizModal] = useState(false);
 
+    const handleCloseFailQuizModal = () => setShowFailQuizModal(false);
+    const handleShowFailQuizModal = () => setShowFailQuizModal(true);
 
     return (
         <>
@@ -51,14 +56,21 @@ function TodaysQuiz() {
                 <QuizModal
                     show={showQuizModal}
                     handleClose={handleCloseQuizModal}
-                    handleShowSuccessQuizModal={handleShowSuccessQuizModal}
+                    // handleShowSuccessQuizModal={handleShowSuccessQuizModal}
+                    handleShowFailQuizModal={handleShowFailQuizModal}
                     backdrop="static"
                     keyboard={false} />
-                <SuccessQuizModal
+                {/* <SuccessQuizModal
                     show={showSuccessQuizModal}
-                    handleClose={handleCloseSuccessQuizModal}
-                    // handleShowPointsStats={handleShowPointsStats}
-                    // handleShowHomeSite={handleShowHomeSite}
+                    handleClose={handleCloseSuccessQuizModal} */}
+                {/* handleShowPointsStats={handleShowPointsStats}
+                    handleShowHomeSite={handleShowHomeSite} */}
+                {/* backdrop="static"
+                    keyboard={false}
+                /> */}
+                <FailQuizModal
+                    show={showFailQuizModal}
+                    handleClose={handleCloseFailQuizModal}
                     backdrop="static"
                     keyboard={false}
                 />
