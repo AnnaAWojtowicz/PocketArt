@@ -20,10 +20,10 @@ function TodaysQuiz() {
     const handleShowQuizModal = () => setShowQuizModal(true);
 
     // SuccessQuizModal
-    // const [showSuccessQuizModal, setShowSuccessQuizModal] = useState(false);
+    const [showSuccessQuizModal, setShowSuccessQuizModal] = useState(false);
 
-    // const handleCloseSuccessQuizModal = () => setShowSuccessQuizModal(false);
-    // const handleShowSuccessQuizModal = () => setShowSuccessQuizModal(true);
+    const handleCloseSuccessQuizModal = () => setShowSuccessQuizModal(false);
+    const handleShowSuccessQuizModal = () => setShowSuccessQuizModal(true);
 
     // FailedQuizModal
     const [showFailQuizModal, setShowFailQuizModal] = useState(false);
@@ -56,21 +56,22 @@ function TodaysQuiz() {
                 <QuizModal
                     show={showQuizModal}
                     handleClose={handleCloseQuizModal}
-                    // handleShowSuccessQuizModal={handleShowSuccessQuizModal}
+                    handleShowSuccessQuizModal={handleShowSuccessQuizModal}
                     handleShowFailQuizModal={handleShowFailQuizModal}
                     backdrop="static"
                     keyboard={false} />
-                {/* <SuccessQuizModal
+                <SuccessQuizModal
                     show={showSuccessQuizModal}
-                    handleClose={handleCloseSuccessQuizModal} */}
-                {/* handleShowPointsStats={handleShowPointsStats}
-                    handleShowHomeSite={handleShowHomeSite} */}
-                {/* backdrop="static"
+                    handleClose={handleCloseSuccessQuizModal}
+                    backdrop="static"
                     keyboard={false}
-                /> */}
+                // handleShowPointsStats={handleShowPointsStats}
+                // handleShowHomeSite={handleShowHomeSite}
+                />
                 <FailQuizModal
                     show={showFailQuizModal}
                     handleClose={handleCloseFailQuizModal}
+                    handleShowQuizModal={handleShowQuizModal}
                     backdrop="static"
                     keyboard={false}
                 />
