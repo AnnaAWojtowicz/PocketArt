@@ -45,7 +45,8 @@ export default function GetInForm() {
                         Submit
                     </Button>
                 </Form>
-                <div className="note-get-in">Already have an account? <span className="note-link-get-in">Sign in</span></div>
+                {showEntireForm === true ? (<div className="note-get-in">Already have an account? <span className="note-link-get-in">Sign in</span></div>) : (<div className="note-get-in">Don't have an account? <span className="note-link-get-in">Register</span></div>)}
+
 
                 {/* <AfterCreateAccountModal show={show} handleClose={handleClose} /> */}
             </div>
