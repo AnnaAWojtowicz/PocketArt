@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-      {/* <Home /> */}
-      {/* <GetIn /> */}
+      <Home />
+      {/* <GetIn />  */}
       {/* <TodaysArt /> */}
-      <TodaysQuiz />
+      {/* <TodaysQuiz /> */}
     </>
   )
 }

@@ -6,8 +6,8 @@ function GetIn() {
     return (<>
         <div className="get-in-container">
             <span className="form-get-in">
-                {/* <CreateAccount /> */}
-                <LogIn />
+                <CreateAccount />
+                {/* <LogIn /> */}
             </span>
             <span className="background-get-in"></span>
         </div>
