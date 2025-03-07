@@ -99,6 +99,9 @@
 
 .note-link-get-in {
   text-decoration: underline;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
 }
 
 /*  SMALL & MEDIUM SCREEN */

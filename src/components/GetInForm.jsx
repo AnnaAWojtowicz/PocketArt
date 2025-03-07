@@ -5,13 +5,10 @@ import Form from 'react-bootstrap/Form';
 import AfterCreateAccountModal from "./AfterCreateAccountModal.jsx";
 
 
-// it starts with WelcomeModal: depending on which button is clicked, it will show either CreateAccount or LogIn
-// need to create component that changes depending on what was clicked in WelcomeModal
+
 export default function GetInForm() {
 
     const [showEntireForm, setShowEntireForm] = useState(false);
-
-
 
     function handleFormChange(e) {
         setShowEntireForm(e);
@@ -45,7 +42,11 @@ export default function GetInForm() {
                         Submit
                     </Button>
                 </Form>
-                {showEntireForm === true ? (<div className="note-get-in">Already have an account? <span className="note-link-get-in">Sign in</span></div>) : (<div className="note-get-in">Don't have an account? <span className="note-link-get-in">Register</span></div>)}
+                {showEntireForm === true ? (
+                    <div className="note-get-in">Already have an account? <button className="note-link-get-in" onClick={() => handleFormChange(false)}>Sign in</button></div>
+                ) : (
+                    <div className="note-get-in">Don't have an account? <button className="note-link-get-in" onClick={() => handleFormChange(true)}>Register</button></div>
+                )}
 
 
                 {/* <AfterCreateAccountModal show={show} handleClose={handleClose} /> */}
