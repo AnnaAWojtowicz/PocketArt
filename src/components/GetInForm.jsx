@@ -39,7 +39,7 @@ export default function GetInForm() {
                     <div className="what-to-do-get-in">Log in</div>
                 )}
 
-                <Form onSubmit={showEntireForm ? { handleSubmit } : undefined}>
+                <Form onSubmit={showEntireForm ? handleSubmit : undefined}>
                     {showEntireForm ? (<Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="name" placeholder="Name" />
@@ -53,7 +53,7 @@ export default function GetInForm() {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="submit-button-get-in" onClick={showEntireForm ? { handleShow } : undefined}>
+                    <Button variant="primary" type="submit" className="submit-button-get-in" onClick={showEntireForm ? handleShow : undefined}>
                         Submit
                     </Button>
                 </Form>
