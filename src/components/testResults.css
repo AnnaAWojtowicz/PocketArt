@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#test-results-title {
+  margin-bottom: 3rem;
+}
+
+.test-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0 auto;
+  color: #ffffff;
+  max-width: 800px;
+  width: 100%;
+}
+
+.result-row {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
