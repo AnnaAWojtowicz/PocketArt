@@ -14,6 +14,16 @@ export default function GetInForm() {
         setShowEntireForm(e);
     }
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        handleShow();
+    };
+
 
     return (
         <>
@@ -23,9 +33,14 @@ export default function GetInForm() {
                     <button onClick={() => handleFormChange(true)}>new user</button>
                 </div>
                 <div className="logo-get-in">PocketArt</div>
-                <div className="what-to-do-get-in">Create an account</div>
-                <Form>
-                    {showEntireForm === true ? (<Form.Group className="mb-3" controlId="formBasicPassword">
+                {showEntireForm ? (
+                    <div className="what-to-do-get-in">Create an account</div>
+                ) : (
+                    <div className="what-to-do-get-in">Log in</div>
+                )}
+
+                <Form onSubmit={showEntireForm ? { handleSubmit } : undefined}>
+                    {showEntireForm ? (<Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="name" placeholder="Name" />
                     </Form.Group>) : ""}
@@ -38,18 +53,18 @@ export default function GetInForm() {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="submit-button-get-in" onClick="">
+                    <Button variant="primary" type="submit" className="submit-button-get-in" onClick={showEntireForm ? { handleShow } : undefined}>
                         Submit
                     </Button>
                 </Form>
-                {showEntireForm === true ? (
+                {showEntireForm ? (
                     <div className="note-get-in">Already have an account? <button className="note-link-get-in" onClick={() => handleFormChange(false)}>Sign in</button></div>
                 ) : (
                     <div className="note-get-in">Don't have an account? <button className="note-link-get-in" onClick={() => handleFormChange(true)}>Register</button></div>
                 )}
 
 
-                {/* <AfterCreateAccountModal show={show} handleClose={handleClose} /> */}
+                <AfterCreateAccountModal show={show} handleClose={handleClose} />
             </div>
         </>
     )
