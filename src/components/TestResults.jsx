@@ -1,11 +1,12 @@
 import "./TestResults.css";
 import NavBar2 from "./NavBar2";
 import TestResult from "./TestResult";
+import { userData } from "../api/userData";
 
 
+let scoreList = userData.sort((a, b) => b.userScore - a.userScore);
 
-// i need to map the test results here
-// i need to get the test results from the database
+
 
 export default function TestResults() {
     return (
@@ -14,10 +15,7 @@ export default function TestResults() {
                 <NavBar2 />
                 <div className="test-results-container">
                     <h1 id="test-results-title">Quiz Hall of Fame</h1>
-
-                    <TestResult />
-                    <TestResult />
-                    <TestResult />
+                    {scoreList.map((user, index) => <TestResult key={user.userName} name={user.userName} score={user.userScore} position={index + 1} />)}
                 </div>
             </div>
         </>

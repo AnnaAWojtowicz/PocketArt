@@ -1,12 +1,15 @@
 import "./TestResults.css";
 
 
-export default function TestResult() {
+
+
+export default function TestResult({ name, score, position }) {
+
     return (
         <div className="result-row">
-            <span>NUMBER</span>
-            <span>USER NAME</span>
-            <span>USER SCORE</span>
+            <span>{position}</span>
+            <span>{name}</span>
+            <span>{score}</span>
         </div>
     )
 }
