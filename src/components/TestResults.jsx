@@ -6,8 +6,6 @@ import { userData } from "../api/userData";
 
 let scoreList = userData.sort((a, b) => b.userScore - a.userScore);
 
-
-
 export default function TestResults() {
     return (
         <>
